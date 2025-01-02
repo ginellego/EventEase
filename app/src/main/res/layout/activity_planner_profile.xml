@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.VendorProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/plannerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/planner"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/ratingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plannerPhone"
+            android:layout_alignStart="@id/phoneLabel"
+            android:layout_marginStart="232dp"
+            android:text="@string/hint_vendor_rating"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/plannerPhone"
+            app:layout_constraintStart_toEndOf="@+id/plannerPhone" />
+
+
+        <TextView
+            android:id="@+id/plannerRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:hint="@string/hint_vendor_rating"
+            android:textSize="22sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/ratingLabel"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <TextView
+            android:id="@+id/BIo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plannerEmail"
+            android:layout_alignStart="@id/emailLabel"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/biographyColon"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/emailLabel"
+            app:layout_constraintTop_toBottomOf="@+id/emailLabel"
+            app:layout_constraintVertical_bias="0.102" />
+
+        <TextView
+            android:id="@+id/plannerBio"
+            android:layout_width="429dp"
+            android:layout_height="145dp"
+            android:hint="@string/biography"
+            android:maxLines="5"
+            android:textSize="22sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/BIo"
+            app:layout_constraintStart_toStartOf="@+id/plannerEmail" />
+
+        <TextView
+            android:id="@+id/phoneLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/plannerPhone"
+            android:layout_marginTop="36dp"
+            android:layout_toStartOf="@id/plannerPhone"
+            android:text="@string/hint_vendor_phone"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plannerName" />
+
+        <TextView
+            android:id="@+id/plannerPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:hint="@string/hint_vendor_phone"
+            android:textSize="22sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/phoneLabel"
+            app:layout_constraintStart_toEndOf="@+id/phoneLabel" />
+
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/plannerEmail"
+            android:layout_alignStart="@id/phoneLabel"
+            android:layout_marginTop="30dp"
+            android:layout_toStartOf="@id/plannerEmail"
+            android:text="@string/hint_vendor_email"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="@+id/phoneLabel"
+            app:layout_constraintTop_toBottomOf="@+id/phoneLabel" />
+
+        <TextView
+            android:id="@+id/plannerEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_vendor_email"
+            android:textSize="22sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/emailLabel"
+            app:layout_constraintStart_toStartOf="@+id/plannerPhone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

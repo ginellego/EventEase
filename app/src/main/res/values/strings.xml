@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">EventEase</string>
+    <string name="hint_name_of_event">Name of event</string>
+    <string name="hint_description_of_event">Description of event</string>
+    <string name="content_description_add_a_new_event">Add a new event</string>
+    <string name="welcome_planner_string">Welcome, %1$s!</string>
+    <string name="welcome_vendor_string">Welcome, %1$s!</string>
+    <string name="static_my_events_string">My Events:</string>
+    <string name="static_my_services_string">My Services:</string>
+    <string name="date_ddmmyy_placeholder">ddmmyy</string>
+    <string name="static_new_event">New Event</string>
+    <string name="description">Description</string>
+    <string name="date_format">yyyy-mm-dd</string>
+    <string name="time_format">hh:mm</string>
+    <string name="create">Create</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="event_name">Event Name:</string>
+    <string name="event_description">Event Description:</string>
+    <string name="location_field">Location:</string>
+    <string name="event_date_field">Event Date:</string>
+    <string name="event_time_field">Event Time:</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="sort_events">Sort events</string>
+    <string name="close">Close</string>
+    <string name="service_requests">Service Requests</string>
+    <string name="no_more_service_offers">You have no incoming service offers.</string>
+    <string name="no_scheduled_services">You have no scheduled events to provide services for!</string>
+    <string name="no_scheduled_events">"You have no scheduled events to plan for!"</string>
+    <string name="type_of_service">Type of service</string>
+    <string name="date_when_service_would_be_needed">Date when service would be needed</string>
+    <string name="read_status">read_status</string>
+    <string name="accept_request">Accept</string>
+    <string name="decline_request">Decline</string>
+    <string name="request_event_name">Event Name:</string>
+    <string name="request_event_description">Event Description:</string>
+    <string name="request_event_location">Event Location:</string>
+    <string name="request_event_date">Event Date:</string>
+    <string name="request_event_time">Event Time:</string>
+    <string name="request_event_budget">Event Budget:</string>
+    <string name="reject_button">reject button</string>
+    <string name="rejected_requests">Rejected Requests</string>
+    <string name="you_have_no_rejected_service_offers">You have no rejected service offers</string>
+    <string name="hint_vendor_phone">Phone Number: </string>
+    <string name="hint_vendor_email">Email: </string>
+    <string name="logout">Logout</string>
+    <string-array name="spinner_items">
+        <item>(none)</item>
+        <item>Name</item>
+        <item>Event Date</item>
+        <item>Date Added(old -> new)</item>
+        <item>Date Added(new -> old)</item>
+    </string-array>
+    <string name="location_of_event">Location of Event:</string>
+    <string name="time_of_event">Time of Event:</string>
+    <string name="date_of_event">Date of Event:</string>
+    <string name="name_of_event">Name of Event:</string>
+    <string name="service_request_accepted">Service Request Accepted</string>
+    <string name="offer_accepted">Offer Accepted:</string>
+    <string name="service_requested">Service Requested:</string>
+    <string-array name="service_types">
+        <item>Select a service type</item>
+        <item>Cake</item>
+        <item>Florist</item>
+        <item>Music</item>
+        <item>Catering</item>
+        <item>Decorator</item>
+        <item>Venue</item>
+    </string-array>
+    <string name="eventVendors">Vendors: </string>
+    <string name="hint_name_of_vendor">Vendor Name: </string>
+    <string name="hint_vendor_rating">Rating: </string>
+    <string name="hint_vendor_cost">Cost: </string>
+    <string name="hint_description_of_vendor">Description: </string>
+    <string name="get_vendors">Get Vendors</string>
+    <string name="vendor_categories">Vendor Categories</string>
+    <string name="cake">Cake</string>
+    <string name="catering">Catering</string>
+    <string name="florist">Florist</string>
+    <string name="decor">Decor</string>
+    <string name="music">Music</string>
+    <string name="venue">Venue</string>
+    <string name="browseVendors">Browse Vendors</string>
+    <string name="vendorImage">Vendor Image</string>
+    <string name="addVendorButton">Add Vendor Button</string>
+    <string name="vendor_name">Vendor name</string>
+    <string name="hint_planner_phone">Phone number: </string>
+    <string name="back_button">Back</string>
+    <string name="hint_plannerEmail">Email</string>
+    <string name="edit_planner_info">Edit Profile</string>
+    <string name="first_name">First Name:</string>
+    <string name="last_name">Last Name:</string>
+    <string name="phone_Number">Phone Number:</string>
+    <string name="email">Email:</string>
+    <string name="planner_bio">Bio:</string>
+    <string name="hint_planner_bio">Add some information about yourself or an interesting fact about you!</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_phone_Number">Phone Number</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="service_type">Service Type:</string>
+    <string name="view_profile">View Planner Profile</string>
+    <string name="logout1">Logout</string>
+    <string name="browse_vendors">Browse Vendors</string>
+    <string name="show_invoice">Show Invoice</string>
+    <string name="go_to_login_page">Go to Login Page</string>
+    <string name="done">Done</string>
+    <string name="profile">Profile</string>
+    <string name="biography">Biography</string>
+    <string name="biographyColon">Biography:</string>
+    <string name="planner">Planner</string>
+
+</resources>

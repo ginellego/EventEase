@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".presentation.VendorCategoryActivity">
+
+    <TextView
+        android:id="@+id/VendorCatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/vendor_categories"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="close"
+        android:text="@string/cancel_button"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/get_vendors"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/venue" />
+
+    <Button
+        android:id="@+id/get_vendors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getVendors"
+        android:text="@string/get_vendors"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cancel" />
+
+    <CheckBox
+        android:id="@+id/cake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/cake"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/VendorCatTextView" />
+
+    <CheckBox
+        android:id="@+id/florist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="@string/florist"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cake"
+        app:layout_constraintStart_toEndOf="@+id/cake" />
+
+    <CheckBox
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/music"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/florist" />
+
+    <CheckBox
+        android:id="@+id/catering"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/catering"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/music"
+        app:layout_constraintStart_toStartOf="@+id/florist" />
+
+    <CheckBox
+        android:id="@+id/decor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/decor"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/catering" />
+
+    <CheckBox
+        android:id="@+id/venue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/venue"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/decor"
+        app:layout_constraintStart_toStartOf="@+id/catering" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

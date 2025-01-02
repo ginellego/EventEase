@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.CreatePlannerAccountActivity">
+
+    <TextView
+        android:id="@+id/textViewSignUpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Profile Info"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/planner_first_name"
+        android:layout_width="311dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/hint_first_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSignUpTitle" />
+
+
+    <Button
+        android:id="@+id/btnCreateUserPlanner"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="onCreatePlannerBtnClick"
+        android:text="Create Profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_planner_bio" />
+
+    <EditText
+        android:id="@+id/planner_last_name"
+        android:layout_width="0dp"
+        android:autofillHints="name"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/hint_last_name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/planner_first_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/planner_first_name" />
+
+    <EditText
+        android:id="@+id/create_planner_phone"
+        android:layout_width="316dp"
+        android:layout_height="54dp"
+        android:autofillHints="phone"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/hint_planner_phone"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/planner_last_name"
+        app:layout_constraintStart_toStartOf="@+id/planner_last_name"
+        app:layout_constraintTop_toBottomOf="@+id/planner_last_name" />
+
+    <EditText
+        android:id="@+id/create_planner_email"
+        android:layout_width="317dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="emailAddress"
+        android:ems="10"
+        android:hint="@string/hint_plannerEmail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/create_planner_phone"
+        app:layout_constraintStart_toStartOf="@+id/create_planner_phone"
+        app:layout_constraintTop_toBottomOf="@+id/create_planner_phone" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goToLogin"
+        android:text="@string/go_to_login_page"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreateUserPlanner" />
+
+    <EditText
+        android:id="@+id/create_planner_bio"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/hint_planner_bio"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_planner_email"
+        android:autofillHints="" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

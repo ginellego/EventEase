@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="5dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="20dp"
+    app:rippleColor="@color/soft_grey">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/off_white">
+
+        <TextView
+            android:id="@+id/vendorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="150dp"
+            android:hint="@string/hint_name_of_vendor"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/serviceTypeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vendorName"
+            android:layout_alignStart="@id/vendorName"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/service_type"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/vendorServiceType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/serviceTypeLabel"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/serviceTypeLabel"
+            android:hint="@string/service_type"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/ratingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vendorServiceType"
+            android:layout_alignStart="@id/serviceTypeLabel"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/hint_vendor_rating"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/vendorRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/ratingLabel"
+            android:layout_alignStart="@id/vendorServiceType"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/ratingLabel"
+            android:hint="@string/hint_vendor_rating"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/costLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vendorRating"
+            android:layout_alignStart="@id/ratingLabel"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/hint_vendor_cost"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/vendorCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/costLabel"
+            android:layout_alignStart="@id/vendorRating"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/costLabel"
+            android:hint="@string/hint_vendor_cost"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/descriptionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vendorCost"
+            android:layout_alignStart="@id/costLabel"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="7dp"
+            android:text="@string/hint_description_of_vendor"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/vendorDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/descriptionLabel"
+            android:layout_alignStart="@id/vendorCost"
+            android:hint="@string/hint_description_of_vendor"
+            android:maxLines="5"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/saveVendor_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:contentDescription="@string/addVendorButton"
+            android:foregroundGravity="center"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/baseline_add_24" />
+
+        <ImageView
+            android:id="@+id/vendor_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vendorEmail"
+            android:layout_alignStart="@id/vendorEmail"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="3dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/vendorImage"
+            android:maxWidth="80dp"
+            android:maxHeight="80dp"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/phoneLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/vendorPhone"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/vendorPhone"
+            android:text="@string/hint_vendor_phone"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/vendorPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="70dp"
+            android:layout_toStartOf="@+id/saveVendor_button"
+            android:hint="@string/hint_vendor_phone"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/vendorEmail"
+            android:layout_alignStart="@id/phoneLabel"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/vendorEmail"
+            android:text="@string/hint_vendor_email"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/vendorEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vendorPhone"
+            android:layout_alignStart="@id/vendorPhone"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="3dp"
+            android:layout_toStartOf="@+id/saveVendor_button"
+            android:hint="@string/hint_vendor_email"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</merge>

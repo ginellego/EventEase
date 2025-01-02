@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.VendorProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="goBack"
+            android:text="@string/back_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:layout_constraintBaseline_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/backBtn">
+
+
+            <TextView
+                android:id="@+id/serviceTypeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vendorName"
+                android:layout_alignStart="@id/vendorName"
+                android:layout_marginTop="30dp"
+                android:text="@string/service_type"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vendorName" />
+
+            <TextView
+                android:id="@+id/vendorServiceType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/serviceTypeLabel"
+                android:layout_toEndOf="@id/serviceTypeLabel"
+                android:hint="@string/service_type"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/serviceTypeLabel"
+                app:layout_constraintStart_toStartOf="@+id/vendorPhone" />
+
+            <TextView
+                android:id="@+id/vendorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_name_of_vendor"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/vendorPicture"
+                app:layout_constraintHorizontal_bias="0.57"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/ratingLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vendorServiceType"
+                android:layout_alignStart="@id/serviceTypeLabel"
+                android:layout_marginEnd="30dp"
+                android:text="@string/hint_vendor_rating"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/vendorRating"
+                app:layout_constraintEnd_toStartOf="@+id/vendorRating" />
+
+            <TextView
+                android:id="@+id/vendorRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="5dp"
+                android:hint="@string/hint_vendor_rating"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vendorPicture" />
+
+            <TextView
+                android:id="@+id/costLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vendorRating"
+                android:layout_alignStart="@id/ratingLabel"
+                android:text="@string/hint_vendor_cost"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/vendorCost"
+                app:layout_constraintEnd_toEndOf="@+id/ratingLabel" />
+
+
+            <TextView
+                android:id="@+id/vendorCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="5dp"
+                android:hint="@string/hint_vendor_cost"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/vendorRating"
+                app:layout_constraintTop_toBottomOf="@+id/vendorRating" />
+
+            <TextView
+                android:id="@+id/descriptionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vendorCost"
+                android:layout_alignStart="@id/costLabel"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/hint_description_of_vendor"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/emailLabel"
+                app:layout_constraintTop_toBottomOf="@+id/emailLabel" />
+
+            <TextView
+                android:id="@+id/vendorDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_description_of_vendor"
+                android:maxLines="5"
+                android:textSize="22sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/descriptionLabel"
+                app:layout_constraintStart_toStartOf="@+id/vendorEmail" />
+
+            <ImageView
+                android:id="@+id/vendorPicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="120dp"
+                android:contentDescription="@string/vendorImage"
+                android:maxHeight="120dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+
+            <TextView
+                android:id="@+id/phoneLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/vendorPhone"
+                android:layout_marginTop="30dp"
+                android:layout_toStartOf="@id/vendorPhone"
+                android:text="@string/hint_vendor_phone"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintStart_toStartOf="@+id/serviceTypeLabel"
+                app:layout_constraintTop_toBottomOf="@+id/serviceTypeLabel" />
+
+            <TextView
+                android:id="@+id/vendorPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:hint="@string/hint_vendor_phone"
+                android:textSize="22sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/phoneLabel"
+                app:layout_constraintStart_toEndOf="@+id/phoneLabel" />
+
+            <TextView
+                android:id="@+id/emailLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/vendorEmail"
+                android:layout_alignStart="@id/phoneLabel"
+                android:layout_marginTop="30dp"
+                android:layout_toStartOf="@id/vendorEmail"
+                android:text="@string/hint_vendor_email"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintStart_toStartOf="@+id/phoneLabel"
+                app:layout_constraintTop_toBottomOf="@+id/phoneLabel" />
+
+            <TextView
+                android:id="@+id/vendorEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_vendor_email"
+                android:textSize="22sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/emailLabel"
+                app:layout_constraintStart_toStartOf="@+id/vendorPhone" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

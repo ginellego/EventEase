@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/invoice_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/service_request_accepted"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- ServiceType -->
+    <TextView
+        android:id="@+id/serviceTypeLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invoice_header"
+        android:padding="16dp"
+        android:text="@string/service_requested"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/serviceTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/serviceTypeLabelTextView"
+        android:layout_toEndOf="@id/serviceTypeLabelTextView"
+        android:padding="16dp"
+        android:textSize="18sp" />
+
+    <!-- Name of Event -->
+    <TextView
+        android:id="@+id/nameOfEventLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/serviceTypeTextView"
+        android:padding="16dp"
+        android:text="@string/name_of_event"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nameOfEventTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/nameOfEventLabelTextView"
+        android:layout_toEndOf="@id/nameOfEventLabelTextView"
+        android:padding="16dp"
+        android:textSize="18sp" />
+
+    <!-- Date of Event -->
+    <TextView
+        android:id="@+id/dateOfEventLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameOfEventTextView"
+        android:padding="16dp"
+        android:text="@string/date_of_event"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dateOfEventTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/dateOfEventLabelTextView"
+        android:layout_toEndOf="@id/dateOfEventLabelTextView"
+        android:padding="16dp"
+        android:textSize="18sp" />
+
+    <!-- Time of Event -->
+    <TextView
+        android:id="@+id/timeOfEventLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateOfEventTextView"
+        android:padding="16dp"
+        android:text="@string/time_of_event"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/timeOfEventTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/timeOfEventLabelTextView"
+        android:layout_toEndOf="@id/timeOfEventLabelTextView"
+        android:padding="16dp"
+        android:textSize="18sp" />
+
+    <!-- Location of Event -->
+    <TextView
+        android:id="@+id/locationOfEventLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeOfEventTextView"
+        android:padding="16dp"
+        android:text="@string/location_of_event"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/locationOfEventTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/locationOfEventLabelTextView"
+        android:layout_toEndOf="@id/locationOfEventLabelTextView"
+        android:padding="16dp"
+        android:textSize="18sp" />
+
+    <!-- Amount Due or Offer Extended -->
+    <TextView
+        android:id="@+id/amountDueOrOfferLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locationOfEventTextView"
+        android:padding="16dp"
+        android:text="@string/offer_accepted"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/offerAccepted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/amountDueOrOfferLabelTextView"
+        android:layout_toEndOf="@id/amountDueOrOfferLabelTextView"
+        android:padding="16dp"
+        android:textSize="18sp" />
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/offerAccepted"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/close"
+        android:textSize="18sp" />
+
+</RelativeLayout>
+
+

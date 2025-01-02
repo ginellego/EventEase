@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:hapticFeedbackEnabled="true"
+    android:padding="10dp"
+    tools:context=".presentation.PlannerMainActivity">
+
+    <include layout="@layout/activity_user_main" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addEventBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="@color/forest_green"
+        android:contentDescription="@string/content_description_add_a_new_event"
+        android:focusable="true"
+        android:onClick="launchAddNewEventActivity"
+        android:scaleType="center"
+        android:src="@drawable/baseline_add_24"
+        app:fabCustomSize="32dp"
+        app:fabSize="auto"
+        app:layout_constraintBottom_toBottomOf="@+id/my_events_or_services"
+        app:layout_constraintStart_toEndOf="@+id/my_events_or_services"
+        app:layout_constraintTop_toTopOf="@+id/my_events_or_services"
+        app:rippleColor="@color/soft_grey" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/sortEventsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="@string/sort_events"
+        android:tint="@color/black"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/user_main_relative_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/addEventBtn"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+        app:layout_constraintVertical_bias="0.885"
+        app:srcCompat="@drawable/filter_list_24" />
+
+    <Button
+        android:id="@+id/browseVendors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/browseVendors"
+        android:onClick="openVendorList"
+        android:text="@string/browse_vendors"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="logout"
+        android:text="@string/logout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/planner_profile_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="goToPlannerProfileActivity"
+        android:text="Profile"
+        app:layout_constraintEnd_toStartOf="@+id/logoutBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
