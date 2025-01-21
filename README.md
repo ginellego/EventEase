@@ -2,6 +2,8 @@
 
 An event planning app that will assist anyone in organizing an event.
 
+This project was originally a project for the COMP 3350 course at the University of Manitoba. It has since been modified with my personal changes. 
+
 ## Purpose
 
 Event Ease offers a platform to coordinate multiple events and track inquiries with vendors. It's intended to consolidate aspects of planning such as keeping a record of all in-progress event planning, looking for vendors for the events, and corresponding with vendors in the app. It aims to ease the process of planning and simplify the search for available vendors. 
@@ -32,22 +34,22 @@ System (UI) Tests: Before running system tests, ensure that the app is uninstall
  
 # Documentation
 
-[Vision Statement](https://code.cs.umanitoba.ca/comp3350-winter2024/eventEase-a02-15/-/blob/main/Artifacts/Iteration%200/vision-statement.md?ref_type=heads)
+[Vision Statement](/VISION.md)
 
-[Architecture](https://code.cs.umanitoba.ca/comp3350-winter2024/eventEase-a02-15/-/blob/main/ARCHITECTURE.md?ref_type=heads)
+[Architecture](/ARCHITECTURE.md)
 
-[Retrospective](https://code.cs.umanitoba.ca/comp3350-winter2024/eventEase-a02-15/-/blob/main/RETROSPECTIVE.md?ref_type=heads)
+[Retrospective](/RETROSPECTIVE.md)
 
-[Presentation](https://code.cs.umanitoba.ca/comp3350-winter2024/eventEase-a02-15/-/blob/main/ProjectPresenation.md?ref_type=heads)
+[Presentation](/ProjectPresenation.md)
 
 ## Iterations
-[Iteration 0](https://code.cs.umanitoba.ca/comp3350-winter2024/eventEase-a02-15/-/tree/main/Artifacts/Iteration%200?ref_type=heads)
+[Iteration 0](/Artifacts/Iteration%200/)
 
-[Iteration 1](https://code.cs.umanitoba.ca/comp3350-winter2024/eventEase-a02-15/-/tree/main/Artifacts/Iteration%201?ref_type=heads)
+[Iteration 1](/Artifacts/Iteration%201/)
 
-[Iteration 2](https://code.cs.umanitoba.ca/comp3350-winter2024/eventEase-a02-15/-/tree/main/Artifacts/Iteration%202?ref_type=heads)
+[Iteration 2](/Artifacts/Iteration%202/)
 
-[Iteration 3](https://code.cs.umanitoba.ca/comp3350-winter2024/eventEase-a02-15/-/tree/main/Artifacts/Iteration%203?ref_type=heads)
+[Iteration 3](/Artifacts/Iteration%203/)
 
 # Group Members
 
