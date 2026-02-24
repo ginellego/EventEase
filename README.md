@@ -40,7 +40,7 @@ System (UI) Tests: Before running system tests, ensure that the app is uninstall
 
 [Retrospective](/RETROSPECTIVE.md)
 
-[Presentation](/ProjectPresenation.md)
+[Presentation](/ProjectPresentation.md)
 
 ## Iterations
 [Iteration 0](/Artifacts/Iteration%200/)
